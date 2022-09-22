@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: black;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+main :where(h2, h3) {
+  text-transform: capitalize;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+header p.bg-yellow {
+  margin: 0;
+  text-align: center;
+  padding: 2rem;
+}
+
+header div {
+  background-color: #1abc9c;
+  margin: 0;
+  color: white;
+  padding: 7rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav a {
+  color: white;
+}
+
+header nav {
+  background-color: #333333;
+}
+
+header nav li {
+  padding: 1.5rem;
+  text-transform: capitalize;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+header nav li:hover {
+  background-color: #ddd;
+}
+
+main aside {
+  background-color: #ddd;
+  padding: 2rem;
+}
+
+main aside img.picture {
+  height: 20rem;
+  width: 100%;
+}
+
+main aside div:last-of-type {
+  display: flex;
+  flex-direction: column;
+}
+
+main aside div:last-of-type img {
+  width: 100%;
+  height: 10rem;
+}
+
+main aside div:last-of-type img + img {
+  margin-top: 2rem;
+}
+
+main #information {
+  padding: 2rem;
+}
+
+main div article img {
+  height: 20rem;
+  width: 100%;
+}
+
+main article + article {
+  margin-top: 2rem;
+}
+
+footer {
+  text-align: center;
+  background-color: #EEE;
+  padding: 1.2rem;
+}
+
+@media screen and (min-width: 992px) {
+  header nav ul {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  header nav li {
+    width: unset;
+  }
+  main {
+    display: flex;
+  }
+}
